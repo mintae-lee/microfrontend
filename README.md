@@ -11,6 +11,11 @@ micro frontend sample
 
 # サンプルApp作成
 
+- 概要
+remote app で共通コンポーネントを作成し、異なるJS Appで共有するサンプルを作成してみました。ボタンをクリック数を+1カウントするシンプルな機能ですが、一般的なJS appとReactで共通で使う処理です。
+簡単にチュートリアルしたく、Module Federationとsolid JSを利用しました。よろしくお願いします。
+
+
 1. 共通処理を持つ app 作成
 ```
 npx create-mf-app
