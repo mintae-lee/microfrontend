@@ -7,7 +7,8 @@ const App = () => {
   const divRef = useRef(null);
   
   useEffect(() => {
-    CounterWrapper(divRef.current);
+    // レンダリング後に実行
+    CounterWrapper(divRef.current); // div domを渡す
   }, []);
 
   return (
