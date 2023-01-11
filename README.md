@@ -1,26 +1,17 @@
 # microfrontend
 micro frontend sample
 
-## 使用ライブラリ
-Module Federation
+# 使用ライブラリ
 
-`複数の個別のビルドによって単一のアプリケーションを構築するWebpackのコアプラグイン`
-
-FYI:
-https://zenn.dev/azukiazusa/articles/6686cb89ae13e5
-
-
-solid-js
-
-`インタラクティブな Web アプリケーションを作成するための JavaScript フレームワーク`
-
-FYI:
-https://www.solidjs.com/guides/getting-started
+| Name | Description | FYI |
+| --- | --- | --- |
+| Module Federation | 複数の個別のビルドによって単一のアプリケーションを構築するWebpackのコアプラグイン | [webpack](https://webpack.js.org/concepts/module-federation/) |
+| solid JS | インタラクティブな Web アプリケーションを作成するための JavaScript フレームワーク | [soild-js](https://www.solidjs.com/guides/getting-started) |
 
 
-## cretae example app
+# サンプルApp作成
 
-1. remote
+1. remote solid-js app 作成
 ```
 npx create-mf-app
 ? Pick the name of your app: remote
@@ -33,7 +24,7 @@ yarn
 yarn start
 ```
 
-2. host
+2. 一般 jsx app 作成
 ```
 npx create-mf-app
 ? Pick the name of your app: host
@@ -46,15 +37,22 @@ yarn
 yarn start
 ```
 
-2. react
+2. react app 作成
 ```
 npx create-mf-app
 ? Pick the name of your app: react-host
 ? Project Type: Application
-? Port number: 8080
-? Framework: solid-js
+? Port number: 3001
+? Framework: react
 
 cd react-host
 yarn
 yarn start
+```
+
+構成
+```mermaid
+graph TD;
+    remote-->js;
+    remote-->react;
 ```
