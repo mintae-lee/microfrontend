@@ -11,7 +11,7 @@ micro frontend sample
 
 # サンプルApp作成
 
-1. remote solid-js app 作成
+1. 共通処理を持つ app 作成
 ```
 npx create-mf-app
 ? Pick the name of your app: remote
@@ -24,7 +24,7 @@ yarn
 yarn start
 ```
 
-2. 一般 jsx app 作成
+2. 一般jsx app 作成
 ```
 npx create-mf-app
 ? Pick the name of your app: host
