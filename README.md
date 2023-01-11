@@ -50,7 +50,10 @@ yarn
 yarn start
 ```
 
+![スクリーンショット 2023-01-11 16 55 27](https://user-images.githubusercontent.com/7709476/211750733-9e0c01f7-5951-41e1-9422-0f0085a81a57.png)
+
 構成
+
 ```mermaid
 graph TD;
     remote-->js;
